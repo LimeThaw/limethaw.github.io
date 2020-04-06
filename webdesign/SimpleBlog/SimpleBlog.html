@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Some info about our page -->
+		<title>The Simple Blog</title>
+		<meta name="author" content="LimeThaw">
+		<meta name="description" content="An example for my simple blog web design based on Bootstrap">
+		<meta name="keywords" content="HTML, CSS, Webdesign, Simple, Blog, Bootstrap">
+	    <meta charset="utf-8">
+
+		<!-- Let's make the Viewport work -->
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Importing our Stylesheets and our favorite font -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="SimpleBlog.css">
+
+		<!-- A little bit of script to make our burger menu work -->
+		<script>
+			function toggleMenu() {
+				var x = document.getElementById("menu");
+				if (x.style.display === "none") {
+					x.style.display = "block";
+				} else {
+					x.style.display = "none";
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+
+		<!-- The ribbon on top holding the page title -->
+		<top-ribbon class="container-fluid">
+
+			<!-- Our burger menu; Since we position it fixed, it doesn't really need to be here, but I feel like it belongs in the top ribbon -->
+			<svg id="menu-toggle" width="3rem" height="3rem" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" onclick="toggleMenu()"><path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 013 11h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 7h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 3h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5z" clip-rule="evenodd"/></svg>
+			<menu id="menu">
+				<menu-item><a href="#">About me</a></menu-item>
+				<menu-item><a href="#">My Portfolio</a></menu-item>
+				<menu-item><a href="#">My GitHub</a></menu-item>
+				<menu-item><a href="#">About this Blog</a></menu-item>
+			</menu>
+
+			<!-- And now our page title -->
+			<heading>
+				The Simple Blog
+			</heading>
+
+		</top-ribbon>
+
+		<!-- The container holding all our blog posts -->
+		<content class="container">
+
+			<!-- A card, holding a single blog post -->
+			<post class="card mx-auto" style="min-width:300px;">
+
+				<!-- The actual content of the post -->
+				<div class="card-body">
+
+					<!-- First, the date -->
+					<post-date class="card-subtitle">04-04-2020</post-date>
+
+					<!-- Then, the title -->
+					<post-title class="card-title"><a href="#">Lorem Ipsum</a></post-title>
+
+					<!-- And finally our text. You can mess around with HTML and style and see how it looks... -->
+					<post-body class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent leo libero, imperdiet eget erat sit amet, ultrices feugiat mauris. Mauris tristique sapien enim. Donec in velit nec metus sodales tempus quis pharetra lorem. Sed vitae faucibus sapien. Praesent facilisis, ipsum non lobortis consectetur, ipsum dui faucibus elit, ac iaculis sem dui in elit. Nullam ut dapibus risus. Proin id mauris nec lacus congue euismod sit amet id mi. Sed diam quam, tincidunt id nisi ac, dignissim dapibus magna. Nam vitae sem in urna tincidunt tempor. Nam et blandit nisi. Praesent lobortis convallis tellus, nec venenatis ligula consectetur placerat. Aenean vel.</post-body>
+
+				</div>
+
+			</post>
+
+			<!-- And now, rinse and repeat, just to make this page look full -->
+
+			<post class="card mx-auto" style="min-width:300px;">
+				<div class="card-body">
+					<post-date class="card-subtitle">03-04-2020</post-date>
+					<post-title class="card-title"><a href="#">Lorem Ipsum No 2</a></post-title>
+					<post-body class="card-text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consequat, justo et tempus lobortis, erat leo scelerisque tellus, in lobortis tortor erat eget nisi. Cras eget vestibulum magna. Duis et bibendum tellus. Suspendisse commodo scelerisque commodo. Morbi erat metus, suscipit in urna a, pretium porttitor dolor. Nulla scelerisque volutpat tristique. Quisque laoreet bibendum faucibus. Maecenas venenatis orci vel metus eleifend, ultricies egestas elit sollicitudin. Nam in enim augue. Aenean ornare sollicitudin felis at tempor. Morbi gravida placerat euismod. Aliquam felis diam, dictum nec tempor et, volutpat nec turpis. Integer fringilla nisi vitae libero posuere pulvinar. Morbi in ex nunc. Donec eu aliquam quam, a gravida tortor. In eget fringilla odio.
+						<br/>
+						Sed at est nec magna suscipit maximus malesuada in magna. Morbi scelerisque pulvinar dolor, egestas convallis velit pellentesque et. Aenean ut lectus a ante maximus porta vehicula vitae ipsum. Cras porta tincidunt consectetur. In mattis sapien et pellentesque efficitur. Aliquam quis leo eleifend, venenatis nunc eu, maximus massa. Nulla quam enim, gravida et lacus sed, faucibus commodo ante. Nunc non viverra lorem, vitae pulvinar ex. Praesent luctus ac purus et posuere. In hac habitasse platea dictumst. Morbi sed lorem id tellus vehicula placerat. Vivamus laoreet, leo in scelerisque interdum, urna tellus convallis dolor, nec bibendum felis turpis vitae lacus.
+						<br/>
+						Aliquam ultrices enim sit amet commodo laoreet. In aliquet ex at eros vehicula, eget interdum quam sodales. Nulla laoreet sem at ipsum rutrum, nec placerat lacus posuere. Mauris a sapien elit. Curabitur commodo dui erat, non iaculis ipsum tempus at. Sed at pharetra dui. Vivamus dapibus nisl sed ante sollicitudin, sed egestas quam eleifend. Etiam laoreet nibh diam, in facilisis enim semper a. Nam commodo bibendum diam. Vestibulum eget sapien tincidunt, faucibus felis sed, bibendum metus. Sed elit nibh, vulputate et massa vitae, pellentesque lobortis purus. Etiam quam ligula, ornare sed odio id, fringilla volutpat dolor. Quisque vestibulum porttitor lectus, in aliquet libero dapibus vel. Suspendisse fringilla ultricies sodales. Donec porta imperdiet nunc, et venenatis quam imperdiet vel. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+						<br/>
+						Praesent fermentum, nisl scelerisque maximus lacinia, dui dolor iaculis augue, et posuere libero justo tristique dolor. Nullam tempor leo in libero malesuada commodo. Proin maximus quis turpis ut fermentum. In hac habitasse platea dictumst. Vestibulum et mollis augue, condimentum efficitur nulla. Praesent orci augue, imperdiet ac ultrices nec, laoreet efficitur nisi. Donec molestie ultricies fermentum.
+						<br/>
+						Aenean id risus a metus placerat consectetur non sit amet nisl. Curabitur sed gravida tortor. Ut vitae odio vel velit suscipit luctus quis sed lacus. Duis vel vehicula diam. Etiam feugiat odio nec nulla sodales, quis egestas diam commodo. Aenean auctor accumsan egestas. Aliquam ac diam at mi fermentum euismod nec elementum massa. Nam vel ullamcorper elit. Pellentesque in felis eget tortor posuere dictum. Morbi cursus, eros ut auctor posuere, libero dolor iaculis nisl, nec ullamcorper nisi dolor nec ante. Suspendisse tempus nibh vel metus vestibulum, ac tempor metus iaculis. Maecenas viverra augue eu eros fermentum, sed semper mi facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam ex id eros imperdiet faucibus.
+					</post-body>
+				</div>
+			</post>
+
+			<post class="card mx-auto" style="min-width:300px;">
+				<div class="card-body">
+					<post-date class="card-subtitle">02-04-2020</post-date>
+					<post-title class="card-title"><a href="#">Lorem Ipsum</a></post-title>
+					<post-body class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent leo libero, imperdiet eget erat sit amet, ultrices feugiat mauris. Mauris tristique sapien enim. Donec in velit nec metus sodales tempus quis pharetra lorem. Sed vitae faucibus sapien. Praesent facilisis, ipsum non lobortis consectetur, ipsum dui faucibus elit, ac iaculis sem dui in elit. Nullam ut dapibus risus. Proin id mauris nec lacus congue euismod sit amet id mi. Sed diam quam, tincidunt id nisi ac, dignissim dapibus magna. Nam vitae sem in urna tincidunt tempor. Nam et blandit nisi. Praesent lobortis convallis tellus, nec venenatis ligula consectetur placerat. Aenean vel.</post-body>
+				</div>
+			</post>
+
+			<post class="card mx-auto" style="min-width:300px;">
+				<div class="card-body">
+					<post-date class="card-subtitle">01-04-2020</post-date>
+					<post-title class="card-title"><a href="#">Lorem Ipsum No 2</a></post-title>
+					<post-body class="card-text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consequat, justo et tempus lobortis, erat leo scelerisque tellus, in lobortis tortor erat eget nisi. Cras eget vestibulum magna. Duis et bibendum tellus. Suspendisse commodo scelerisque commodo. Morbi erat metus, suscipit in urna a, pretium porttitor dolor. Nulla scelerisque volutpat tristique. Quisque laoreet bibendum faucibus. Maecenas venenatis orci vel metus eleifend, ultricies egestas elit sollicitudin. Nam in enim augue. Aenean ornare sollicitudin felis at tempor. Morbi gravida placerat euismod. Aliquam felis diam, dictum nec tempor et, volutpat nec turpis. Integer fringilla nisi vitae libero posuere pulvinar. Morbi in ex nunc. Donec eu aliquam quam, a gravida tortor. In eget fringilla odio.
+						<br/>
+						Sed at est nec magna suscipit maximus malesuada in magna. Morbi scelerisque pulvinar dolor, egestas convallis velit pellentesque et. Aenean ut lectus a ante maximus porta vehicula vitae ipsum. Cras porta tincidunt consectetur. In mattis sapien et pellentesque efficitur. Aliquam quis leo eleifend, venenatis nunc eu, maximus massa. Nulla quam enim, gravida et lacus sed, faucibus commodo ante. Nunc non viverra lorem, vitae pulvinar ex. Praesent luctus ac purus et posuere. In hac habitasse platea dictumst. Morbi sed lorem id tellus vehicula placerat. Vivamus laoreet, leo in scelerisque interdum, urna tellus convallis dolor, nec bibendum felis turpis vitae lacus.
+						<br/>
+						Aliquam ultrices enim sit amet commodo laoreet. In aliquet ex at eros vehicula, eget interdum quam sodales. Nulla laoreet sem at ipsum rutrum, nec placerat lacus posuere. Mauris a sapien elit. Curabitur commodo dui erat, non iaculis ipsum tempus at. Sed at pharetra dui. Vivamus dapibus nisl sed ante sollicitudin, sed egestas quam eleifend. Etiam laoreet nibh diam, in facilisis enim semper a. Nam commodo bibendum diam. Vestibulum eget sapien tincidunt, faucibus felis sed, bibendum metus. Sed elit nibh, vulputate et massa vitae, pellentesque lobortis purus. Etiam quam ligula, ornare sed odio id, fringilla volutpat dolor. Quisque vestibulum porttitor lectus, in aliquet libero dapibus vel. Suspendisse fringilla ultricies sodales. Donec porta imperdiet nunc, et venenatis quam imperdiet vel. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+						<br/>
+						Praesent fermentum, nisl scelerisque maximus lacinia, dui dolor iaculis augue, et posuere libero justo tristique dolor. Nullam tempor leo in libero malesuada commodo. Proin maximus quis turpis ut fermentum. In hac habitasse platea dictumst. Vestibulum et mollis augue, condimentum efficitur nulla. Praesent orci augue, imperdiet ac ultrices nec, laoreet efficitur nisi. Donec molestie ultricies fermentum.
+						<br/>
+						Aenean id risus a metus placerat consectetur non sit amet nisl. Curabitur sed gravida tortor. Ut vitae odio vel velit suscipit luctus quis sed lacus. Duis vel vehicula diam. Etiam feugiat odio nec nulla sodales, quis egestas diam commodo. Aenean auctor accumsan egestas. Aliquam ac diam at mi fermentum euismod nec elementum massa. Nam vel ullamcorper elit. Pellentesque in felis eget tortor posuere dictum. Morbi cursus, eros ut auctor posuere, libero dolor iaculis nisl, nec ullamcorper nisi dolor nec ante. Suspendisse tempus nibh vel metus vestibulum, ac tempor metus iaculis. Maecenas viverra augue eu eros fermentum, sed semper mi facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam ex id eros imperdiet faucibus.
+					</post-body>
+				</div>
+			</post>
+
+		</content>
+
+		<!-- Our footer; Put any additional info and notices here -->
+		<footer class="container-fluid">&copy; LimeThaw 2020 | <a href="#">GitHub</a></footer>
+	</body>
+</html>
