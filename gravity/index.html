@@ -1,0 +1,33 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Limo Tau">
+		<meta name="version" content="0.2">
+		<title>Gravity</title>
+		  <!--[if lt IE 9]>
+		  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		  <![endif]-->
+	  	<script src="code.js"></script>
+	  	<link rel="stylesheet" href="style.css" type="text/css">
+	</head>
+
+	<body onload="init()">
+		<canvas id="screen"></canvas>
+		<tag>Gravity?<br/>Click to find out.</tag>
+		<div class="menu">
+			<div class="option">
+				<input type="range" min="100" max="10000" step="100" value="1000" id="particles" class="menuLeft" />
+				<output id="rangeValue" class="menuRight">300</output>
+			</div>
+			<div class="option">
+				<div class="menuRight">
+					<input type="Button" id="positivePolarityButton" value="+"></input>
+					<input type="Button" id="negativePolarityButton" value="-"></input>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html> 
