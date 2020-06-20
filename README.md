@@ -9,4 +9,4 @@
 	- [Gravity](https://limethaw.github.io/gravity)
 	
 - Ressources
-Rendering Equation | PDF | ODP | PPTX
+| Rendering Equation | PDF | ODP | PPTX |
