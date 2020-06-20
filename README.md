@@ -12,4 +12,4 @@
 
 | Title | Links |
 | --- | --- |
-| Rendering Equation | [PDF Download](https://github.com/LimeThaw/limethaw.github.io/raw/master/ressources/Licht.pdf) |
+| Rendering Equation | [PDF](https://limethaw.github.io/ressources/Licht.pdf) |
