@@ -10,6 +10,6 @@
 	
 - Ressources
 
-| Title | | | |
-| --- | --- | --- | --- |
-| Rendering Equation | PDF | ODP | PPTX |
+| Title | Links |
+| --- | --- |
+| Rendering Equation | PDF ODP PPTX |
