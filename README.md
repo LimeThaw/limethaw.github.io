@@ -12,4 +12,4 @@
 
 | Title | Links |
 | --- | --- |
-| Rendering Equation | PDF ODP PPTX |
+| Rendering Equation | [PDF](https://limethaw.github.io/ressources/Licht.pdf) |
