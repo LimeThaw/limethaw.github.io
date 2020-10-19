@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Bootstrap metatags -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Custom metatags -->
+		<title>peers</title>
+		<meta name="description" content="I wanna try the peerjs library.">
+		<meta name="keywords" content="bootstrap less css jquery javascript p2p limethaw">
+		<meta name="author" content="LimeThaw">
+		<link rel="icon" type="image/png" href="">
+
+		<!-- Bootstrap & jQuery -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<script
+			  src="https://code.jquery.com/jquery-3.5.1.min.js"
+			  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+			  crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+		<!-- Iconic -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" rel="stylesheet">
+
+		<!-- Style & Less -->
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;400;900&display=swap" rel="stylesheet">
+		<link rel="stylesheet/less" href="style.less" type="text/css">
+		<script>
+			less = {
+				env: "development",
+				async: true,
+				fileAsync: true,
+				relativeUrls: true
+			};
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.12.2/less.js" ></script>
+
+		<!-- peerjs and custom js -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/peerjs/1.3.1/peerjs.min.js" integrity="sha512-wNUAk/IKoDcVSiKiN/0ormRTzENc9IbFdHa/BWNuLPtp2kG53TLf5dobOeCHoeafnlaSfjKAiSewS6AJspm/Iw==" crossorigin="anonymous"></script>
+		<script src="code.js" ></script>
+
+	</head>
+	<body>
+		<nav class="navbar header">
+			<div class="container">
+				<img class="navbar-brand" src="bubble.png" />
+			</div>
+		</nav>
+
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<span>My UserID: </span><span id="uid"></span>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col">
+					<form id="connectForm">
+						<input type="text" placeholder="UID" id="connectUID">
+						<input type="text" placeholder="Text" id="connectText">
+						<button type="submit">Send</button>
+					</form>
+				</div>
+			</div>
+				
+			<div class="row">
+				<div class="col" id="msgs">
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
