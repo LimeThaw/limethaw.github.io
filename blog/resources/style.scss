@@ -3,7 +3,7 @@ $white: #e0e1e4;
 $gray: mix($black, $white, 25%);
 
 body {
-    background-color:$white;
+    background-color: darken($color: $white, $amount: 5%);
     color:$black;
 }
 
@@ -18,15 +18,23 @@ body {
     }
 }
 
-.card-body {
-    background-color: lighten($color: $white, $amount: 10%);
+.card {
+    width: 100%;
+    margin-bottom: 3rem;
+    border-top: 5px solid $black;
+    filter: drop-shadow(0.5rem 0.5rem 0.3rem $gray);
 
-    .article-title {
-        font-size: 2rem;
-    }
-
-    .article-text {
-        margin-top: 2rem;
+    .card-body {
+        // background-color: lighten($color: $white, $amount: 10%);
+        background-color: $white;
+    
+        .article-title {
+            font-size: 2rem;
+        }
+    
+        .article-text {
+            margin-top: 2rem;
+        }
     }
 }
 
