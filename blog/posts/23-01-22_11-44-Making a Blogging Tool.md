@@ -19,3 +19,13 @@ As of writing this, I am implementing the Python tool. It seems interesting
 to create such a minimalistic piece of software, since I don't really have
 to think too much about use- and edge cases, but just conde in what I need
 right now.
+
+Next up is the design. I usesome boilerplate code that I made a few years
+back when I experimented with web design during the pandemic. Back then, I
+used LESS stylesheets, but I have since realized that the longer load times
+caused by the Just-In-Time compilation makes for a pretty bad user experience,
+so I switched to SCSS instead, which I can compile within VS Code. I also use
+Bootstrap, which is handy, but I don't have a lot of experience with it, so
+I scavenged some online examples and tutorials for inspiration. Keeping in
+line with the tone of this project, the design is very minimalistic and only
+contains what is absolutely necessary for the current state.

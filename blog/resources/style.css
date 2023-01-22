@@ -1,0 +1,28 @@
+body {
+    background-color: #e0e1e4;
+    color: #000505;
+}
+
+#header {
+    background-color: #000505;
+    color: #e0e1e4;
+    margin-bottom: 3rem;
+}
+#header .navbar-brand {
+    margin-left: 2rem;
+    font-size: 2rem;
+}
+
+.card-body {
+    background-color: #fbfbfc;
+}
+.card-body .article-title {
+    font-size: 2rem;
+}
+.card-body .article-text {
+    margin-top: 2rem;
+}
+
+#footer {
+    border-top: 1px solid #a8aaac;
+}

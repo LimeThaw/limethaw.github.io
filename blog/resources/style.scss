@@ -1,0 +1,35 @@
+$black: #000505;
+$white: #e0e1e4;
+$gray: mix($black, $white, 25%);
+
+body {
+    background-color:$white;
+    color:$black;
+}
+
+#header {
+    background-color: $black;
+    color: $white;
+
+    margin-bottom: 3rem;
+    .navbar-brand {
+        margin-left: 2rem;
+        font-size: 2rem;
+    }
+}
+
+.card-body {
+    background-color: lighten($color: $white, $amount: 10%);
+
+    .article-title {
+        font-size: 2rem;
+    }
+
+    .article-text {
+        margin-top: 2rem;
+    }
+}
+
+#footer {
+    border-top: 1px solid $gray;
+}

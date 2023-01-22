@@ -15,7 +15,7 @@ def generate_article(title):
         "time": datetime.datetime.now().strftime("%y-%m-%d_%H-%M"),
         "title": title,
     })
-    shutil.copyfile("template.md", "posts/"+filename)
+    shutil.copyfile("templates/article_markdown.md", "posts/"+filename)
 
     my_uuid = uuid.uuid4().hex
     timestamp = time.time()
