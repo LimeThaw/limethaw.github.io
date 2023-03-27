@@ -1,34 +1,35 @@
 body {
-    background-color: #d2d4d8;
-    color: #000505;
+  background-color: #d2d4d8;
+  color: #000505;
 }
 
 #header {
-    background-color: #000505;
-    color: #e0e1e4;
-    margin-bottom: 3rem;
+  background-color: #000505;
+  color: #e0e1e4;
+  margin-bottom: 3rem;
 }
 #header .navbar-brand {
-    margin-left: 2rem;
-    font-size: 2rem;
+  margin-left: 2rem;
+  font-size: 2rem;
+  color: #e0e1e4;
 }
 
 .card {
-    width: 100%;
-    margin-bottom: 3rem;
-    border-top: 5px solid #000505;
-    filter: drop-shadow(0.5rem 0.5rem 0.3rem #a8aaac);
+  width: 100%;
+  margin-bottom: 3rem;
+  border-top: 5px solid #000505;
+  filter: drop-shadow(0.5rem 0.5rem 0.3rem #a8aaac);
 }
 .card .card-body {
-    background-color: #e0e1e4;
+  background-color: #e0e1e4;
 }
 .card .card-body .article-title {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 .card .card-body .article-text {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 #footer {
-    border-top: 1px solid #a8aaac;
-}
+  border-top: 1px solid #a8aaac;
+}/*# sourceMappingURL=style.css.map */
