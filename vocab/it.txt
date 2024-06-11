@@ -1,0 +1,25 @@
+fisica:Physik
+foce:Mund
+fiume:Fluss
+allargare:vergrößern
+quindi:daher
+antica:uralt
+nonché:sowie
+ovest:Westen
+est:Ost
+chiusura:Schließung
+Carlo Magno:Karl der Große
+insediamento:Siedlung
+re:König
+crescita:Wachstum
+vescovo:Bischof
+diocesi:Bistum
+scoperta:Entdeckung
+secolo:Jahrhundert
+viene iniziata:ist gestartet
+dopo:Nach
+ottenere:erhalten
+impero:Reich
+diventare:werden
+poi:dann
+municipio:Rathaus
