@@ -22,7 +22,12 @@ ottenere:erhalten
 impero:Reich
 diventare:werden
 poi:dann
-municipio:Rathaus`
+municipio:Rathaus
+ricco:reich
+ascoltare:hören
+volere:Wollen
+appartenere:gehören
+modo:Art und Weise`
 
 
 
